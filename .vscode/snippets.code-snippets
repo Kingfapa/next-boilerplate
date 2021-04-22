@@ -1,0 +1,20 @@
+{
+	"NextJS Default Page": {
+		"scope": "typescriptreact",
+		"prefix": "nnew",
+		"body": [
+			"import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next'\n",
+			"interface ${TM_FILENAME_BASE/(^.)/${1:/upcase}/}PageProps {}\n",
+			"export const getServerSideProps: GetServerSideProps<${TM_FILENAME_BASE/(^.)/${1:/upcase}/}PageProps> = async () => {",
+			"    return {",
+			"        props: {},",
+			"    }",
+			"}\n",
+			"const ${TM_FILENAME_BASE/(^.)/${1:/upcase}/}Page: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = () => {",
+			"    return <div></div>",
+			"}\n",
+			
+			"export default ${TM_FILENAME_BASE/(^.)/${1:/upcase}/}Page"
+		]
+	},
+}
